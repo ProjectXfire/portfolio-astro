@@ -17,10 +17,10 @@ import BoxIcon from '@shared/components/BoxIcon.astro';
   </div>
   <div class='hero-box center'>
     <div class='hero-animated-container'>
-      <BoxIcon imgPath='icons/typescript.svg' imgName='typescript' top={30} left={30} rotate />
-      <BoxIcon imgPath='icons/css.svg' imgName='css' bottom={30} left={30} rotate />
-      <BoxIcon imgPath='icons/html.svg' imgName='html' right={30} top={30} rotate />
-      <BoxIcon imgPath='icons/javascript.svg' imgName='javascript' right={30} bottom={30} rotate />
+      <BoxIcon imgPath='icons/typescript.svg' imgName='typescript' top={15} left={15} rotate />
+      <BoxIcon imgPath='icons/css.svg' imgName='css' bottom={15} left={15} rotate />
+      <BoxIcon imgPath='icons/html.svg' imgName='html' right={15} top={15} rotate />
+      <BoxIcon imgPath='icons/javascript.svg' imgName='javascript' right={15} bottom={15} rotate />
     </div>
   </div>
 </section>
@@ -31,6 +31,7 @@ import BoxIcon from '@shared/components/BoxIcon.astro';
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--box-color);
+    gap: 20px;
   }
   .hero-box {
     display: flex;
@@ -52,8 +53,8 @@ import BoxIcon from '@shared/components/BoxIcon.astro';
     align-items: center;
   }
   .hero-animated-container {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     position: relative;
     animation: animateIcons 5s linear infinite;
   }

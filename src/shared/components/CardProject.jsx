@@ -22,7 +22,7 @@ function CardProject({ name, description, imgPath, demo, code, tags }) {
             <Tag key={t} name={t[0] + t.substring(1).toLowerCase()} />
           ))}
         </div>
-        <p>{description.length > 150 ? `${description.substring(0, 150)} ...` : description}</p>
+        <p>{description.length > 150 ? `${description.substring(0, 140)} ...` : description}</p>
       </div>
     </article>
   );

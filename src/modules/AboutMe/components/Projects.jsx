@@ -1,16 +1,58 @@
+import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 // Styles
 import styles from '../styles/projects.module.css';
 // Data
 import projects from '../data/DataProjects.json';
 // Components
 import CardProject from '@shared/components/CardProject';
+import Pagination from '@shared/components/Pagination';
+import { useEffect } from 'react';
+
+const TOTAL_PAGES = 6;
+const ITEMS_PER_PAGE = 4;
 
 function Projects() {
+  const [pageInfo, setPageInfo] = useState({
+    start: 0,
+    end: 4,
+    totalPages: TOTAL_PAGES,
+    itemsPerPage: ITEMS_PER_PAGE
+  });
+  //const totalPage = Math.ceil(projects.length / itemsPerPage);
+
+  const isDesktop = useMediaQuery({ query: '(min-width: 1207px)' });
+  const isTablet = useMediaQuery({ query: '(min-width: 907px)' });
+  const isMobile = useMediaQuery({ query: '(min-width: 607px)' });
+  const isSmallsMobile = useMediaQuery({ query: '(min-width: 0px)' });
+
+  const handlePage = (page) => {
+    const newStart = (page - 1) * pageInfo.itemsPerPage;
+    const newEnd = newStart + pageInfo.itemsPerPage;
+    setPageInfo({ ...pageInfo, start: newStart, end: newEnd });
+  };
+
+  useEffect(() => {
+    let ipp = 4;
+    if (isSmallsMobile) ipp = 1;
+    if (isMobile) ipp = 2;
+    if (isTablet) ipp = 3;
+    if (isDesktop) ipp = 4;
+    console.log(ipp);
+    setPageInfo({
+      ...pageInfo,
+      itemsPerPage: ipp,
+      totalPages: Math.ceil(projects.length / ipp),
+      start: 0,
+      end: ipp
+    });
+  }, [isDesktop, isTablet, isMobile, isSmallsMobile]);
+
   return (
     <section className={styles.container}>
       <h1>Projects</h1>
       <div className={styles.projects}>
-        {projects.map((p) => (
+        {projects.slice(pageInfo.start, pageInfo.end).map((p) => (
           <CardProject
             key={p.id}
             imgPath={p.image}
@@ -22,7 +64,7 @@ function Projects() {
           />
         ))}
       </div>
-      <div>Pagination</div>
+      <Pagination pages={pageInfo.totalPages} currentPage={handlePage} />
     </section>
   );
 }
