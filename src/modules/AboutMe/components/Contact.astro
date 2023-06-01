@@ -1,3 +1,26 @@
+---
+import MessageForm from './MessageForm';
+import MyInfo from './MyInfo.astro';
+---
+
 <section>
-  <h1>Contact</h1>
+  <h1>Contact Me</h1>
+  <div class='contact'>
+    <MyInfo />
+    <MessageForm client:load />
+  </div>
 </section>
+
+<style>
+  .contact {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  @media (min-width: 650px) {
+    .contact {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+</style>

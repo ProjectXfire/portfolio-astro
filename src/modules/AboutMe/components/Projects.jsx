@@ -1,13 +1,13 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 // Styles
-import styles from '../styles/projects.module.css';
+import styles from '@shared/styles/cards.module.css';
 // Data
 import projects from '../data/DataProjects.json';
 // Components
-import CardProject from '@shared/components/CardProject';
+import CardProject from '../components/CardProject';
 import Pagination from '@shared/components/Pagination';
-import { useEffect } from 'react';
 
 const TOTAL_PAGES = 6;
 const ITEMS_PER_PAGE = 4;
@@ -19,7 +19,6 @@ function Projects() {
     totalPages: TOTAL_PAGES,
     itemsPerPage: ITEMS_PER_PAGE
   });
-  //const totalPage = Math.ceil(projects.length / itemsPerPage);
 
   const isDesktop = useMediaQuery({ query: '(min-width: 1207px)' });
   const isTablet = useMediaQuery({ query: '(min-width: 907px)' });
@@ -38,7 +37,6 @@ function Projects() {
     if (isMobile) ipp = 2;
     if (isTablet) ipp = 3;
     if (isDesktop) ipp = 4;
-    console.log(ipp);
     setPageInfo({
       ...pageInfo,
       itemsPerPage: ipp,
