@@ -1,0 +1,81 @@
+---
+// Components
+import BoxIcon from '@shared/components/BoxIcon.astro';
+---
+
+<section class='hero-container'>
+  <div class='hero-box'>
+    <div>
+      <h1 class='hero-title'>My Portfolio</h1>
+    </div>
+    <p class='hero-paragraph'>
+      Hi 😄, my name is Gabriel Vargas Bravo, I am a Self-motivated developer, learning about this
+      huge world of web development. I have started a few years ago, learning the basics things like
+      HTML , CSS and Javascript . Now I am using technologies as React or Angular to development my
+      projects.
+    </p>
+  </div>
+  <div class='hero-box center'>
+    <div class='hero-animated-container'>
+      <BoxIcon imgPath='icons/typescript.svg' imgName='typescript' top={30} left={30} rotate />
+      <BoxIcon imgPath='icons/css.svg' imgName='css' bottom={30} left={30} rotate />
+      <BoxIcon imgPath='icons/html.svg' imgName='html' right={30} top={30} rotate />
+      <BoxIcon imgPath='icons/javascript.svg' imgName='javascript' right={30} bottom={30} rotate />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--box-color);
+  }
+  .hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .hero-title {
+    padding: 5px 25px;
+    display: inline-flex;
+    border: 1.5px solid var(--secondary-color);
+    background-color: var(--box-color2);
+    border-radius: 12px;
+  }
+  .hero-paragraph {
+    font-size: 1.2rem;
+  }
+  .center {
+    align-items: center;
+  }
+  .hero-animated-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    animation: animateIcons 5s linear infinite;
+  }
+  @keyframes animateIcons {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @media (min-width: 768px) {
+    .hero-box {
+      height: 400px;
+    }
+    .hero-container {
+      grid-template-columns: 1fr 1fr;
+    }
+    .hero-animated-container {
+      width: 300px;
+      height: 300px;
+      animation: animateIcons 5s linear infinite;
+    }
+  }
+</style>

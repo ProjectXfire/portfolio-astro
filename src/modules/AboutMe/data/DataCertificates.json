@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "HTML and CSS",
+    "image": "img/html_css.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1492-html-css-2019/diploma/detalle/"
+  },
+  {
+    "id": 2,
+    "name": "CSS Grid Layout",
+    "image": "img/css_grid_layout.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1229-css-grid-layout-2017/diploma/detalle/"
+  },
+  {
+    "id": 3,
+    "name": "CSS Responsive",
+    "image": "img/responsive_design.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/2030-mobile-first/diploma/detalle/"
+  },
+  {
+    "id": 4,
+    "name": "Javascript Fundamentals",
+    "image": "img/fundamentos_javascript.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1339-fundamentos-javascript-2018/diploma/detalle/"
+  },
+  {
+    "id": 5,
+    "name": "Javascript Advance",
+    "image": "img/profesional_javascript.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1642-javascript-profesional/diploma/detalle/"
+  },
+  {
+    "id": 6,
+    "name": "ReactJS",
+    "image": "img/reactjs.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1548-react-2019/diploma/detalle/"
+  },
+  {
+    "id": 8,
+    "name": "React Advance",
+    "image": "img/reactjs_avanzado.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1601-react-avanzado/diploma/detalle/"
+  },
+  {
+    "id": 9,
+    "name": "React Native Fundamentals",
+    "image": "img/introduccion_react_native.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/2043-react-native-cli/diploma/detalle/"
+  },
+  {
+    "id": 10,
+    "name": "Redux by Bedu",
+    "image": "img/redux_bedu.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1613-redux/diploma/detalle/"
+  },
+  {
+    "id": 12,
+    "name": "Next JS",
+    "image": "img/nextjs.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1991-next/diploma/detalle/"
+  },
+  {
+    "id": 13,
+    "name": "Angular",
+    "image": "img/angular.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1670-angular-8/diploma/detalle/"
+  },
+  {
+    "id": 15,
+    "name": "Angular Advance",
+    "image": "img/angular_profesional.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/1731-angular-profesional/diploma/detalle/"
+  },
+  {
+    "id": 17,
+    "name": "NestJS",
+    "image": "img/nestjs.jpg",
+    "school": "Platzy",
+    "link": "https://platzi.com/p/gabrielvargasbravo/curso/2272-nestjs/diploma/detalle/"
+  },
+  {
+    "id": 20,
+    "name": "React Expert",
+    "image": "img/udemy_fh_react_1.jpg",
+    "school": "Udemy",
+    "link": "https://www.udemy.com/certificate/UC-a0e0549e-9d07-4d59-a28d-ee28c564bad2/"
+  },
+  {
+    "id": 21,
+    "name": "React advanced",
+    "image": "img/udemy_fh_react_2.jpg",
+    "school": "Udemy",
+    "link": "https://www.udemy.com/certificate/UC-3fd09ab8-92ac-46e8-b6e7-3a3f04f75c41/"
+  },
+  {
+    "id": 22,
+    "name": "React with Socket.io",
+    "image": "img/udemy_fh_react_socketio.jpg",
+    "school": "Udemy",
+    "link": "https://www.udemy.com/certificate/UC-02f32794-f3d0-424e-96a1-60caf92d5d5f/"
+  },
+  {
+    "id": 23,
+    "name": "React Native",
+    "image": "img/udemy_fh_react_native.jpg",
+    "school": "Udemy",
+    "link": "https://www.udemy.com/certificate/UC-62227215-9221-446f-a0bc-089185d06b7d/"
+  },
+  {
+    "id": 24,
+    "name": "NextJS",
+    "image": "img/udemy_fh_nextjs.jpg",
+    "school": "Udemy",
+    "link": "https://www.udemy.com/certificate/UC-6daef2a4-0a29-42e8-aeee-4359affb735a/"
+  },
+  {
+    "id": 25,
+    "name": "NestJS",
+    "image": "img/udemy_ddr_nestjs.jpg",
+    "school": "Udemy",
+    "link": "https://www.udemy.com/certificate/UC-7fee9b18-2c28-4e34-8dab-fc27f5dbb9b3/"
+  }
+]

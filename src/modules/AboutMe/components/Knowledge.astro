@@ -1,0 +1,30 @@
+---
+import CardIcon from '@shared/components/CardIcon.astro';
+---
+
+<section>
+  <h1>My Knowledges</h1>
+  <div class='knowledges'>
+    <CardIcon name='HTML' pathIcon='icons/html.svg' />
+    <CardIcon name='CSS' pathIcon='icons/css.svg' />
+    <CardIcon name='Javascript' pathIcon='icons/javascript.svg' />
+    <CardIcon name='Typescript' pathIcon='icons/typescript.svg' />
+    <CardIcon name='React' pathIcon='icons/react.svg' />
+    <CardIcon name='React Native' pathIcon='icons/react-native.svg' />
+    <CardIcon name='Angular' pathIcon='icons/angular.svg' />
+    <CardIcon name='Redux' pathIcon='icons/redux.svg' />
+    <CardIcon name='Git' pathIcon='icons/git.svg' />
+    <CardIcon name='Astro' pathIcon='icons/astrojs.svg' />
+    <CardIcon name='Next.JS' pathIcon='icons/nextjs.svg' />
+    <CardIcon name='Flutter' pathIcon='icons/flutter.svg' />
+    <CardIcon name='Nest.JS' pathIcon='icons/nestjs.svg' />
+  </div>
+</section>
+
+<style>
+  .knowledges {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+</style>

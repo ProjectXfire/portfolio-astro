@@ -1,0 +1,51 @@
+---
+interface Props {
+  imgPath: string;
+  imgName: string;
+  top?: number;
+  bottom?: number;
+  left?: number;
+  right?: number;
+  rotate?: boolean;
+}
+const { imgPath, imgName, rotate = false, top, bottom, right, left } = Astro.props;
+---
+
+<div
+  class={`box-icon ${rotate && 'rotate'}`}
+  style={{
+    top: top && `${top}px`,
+    left: left && `${left}px`,
+    right: right && `${right}px`,
+    bottom: bottom && `${bottom}px`
+  }}
+>
+  <img src={imgPath} alt={imgName} />
+</div>
+
+<style>
+  .box-icon {
+    position: absolute;
+    display: inline-flex;
+    padding: 10px;
+    border: 1.5px solid var(--secondary-color);
+    background-color: var(--box-color2);
+    border-radius: 50%;
+  }
+  .rotate {
+    animation: animateIcon 5s linear infinite;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  @keyframes animateIcon {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>

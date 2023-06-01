@@ -1,0 +1,27 @@
+---
+interface Props {
+  pathIcon: string;
+  name: string;
+}
+const { pathIcon, name } = Astro.props;
+---
+
+<article class='card'>
+  <img src={pathIcon} alt={name} />
+  <p>{name}</p>
+</article>
+
+<style>
+  .card {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--box-color2);
+    border-radius: 12px;
+    cursor: default;
+  }
+  .card img {
+    width: 80px;
+  }
+</style>

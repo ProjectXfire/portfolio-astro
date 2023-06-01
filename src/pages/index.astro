@@ -1,0 +1,20 @@
+---
+// Layouts
+import MainLayout from '@shared/layout/MainLayout.astro';
+// Components
+import Hero from '@modules/AboutMe/components/Hero.astro';
+import Knowledge from '@modules/AboutMe/components/Knowledge.astro';
+import Projects from '@modules/AboutMe/components/Projects';
+import Contact from '@modules/AboutMe/components/Contact.astro';
+---
+
+<MainLayout title='My Portfolio'>
+  <main>
+    <Hero />
+    <Knowledge />
+    <Projects client:load />
+    <Contact />
+  </main>
+</MainLayout>
+
+<style></style>
